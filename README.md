@@ -7,21 +7,21 @@ See http://uptimesoftware.github.io for more information.
 
 ### Category
 
-{ page.category }}
+storage
 
 ### Version Compatibility
 
 
   
-    * NetApp Monitor 3.0 - 7.2
+* NetApp Monitor 3.0 - 7.2
   
 
   
-    * NetApp Monitor 2.0 - 6.0
+* NetApp Monitor 2.0 - 6.0
   
 
   
-    * NetApp Monitor 1.0 - 5.5, 5.4, 5.3
+* NetApp Monitor 1.0 - 5.5, 5.4, 5.3
   
 
 
@@ -49,8 +49,43 @@ None; no agent required
 
 ### Output Variables
 
-* Filesystem Capacity* Filesystem Used* Filesystem Inode Capacity* Filesystem Status* Mirror Status* FC Read Bytes/sec* FC Write Bytes/sec* iSCSI Read Bytes/sec* iSCSI Write Bytes/sec* iSCSI Operations/sec* FCP Operations/sec* LUN Read Bytes/sec* LUN Write Bytes/sec* LUN Errors/sec* LUN Read Ops/sec* LUN Write Ops/sec* LUN Other Ops/sec
+
+* Filesystem Capacity
+
+* Filesystem Used
+
+* Filesystem Inode Capacity
+
+* Filesystem Status
+
+* Mirror Status
+
+* FC Read Bytes/sec
+
+* FC Write Bytes/sec
+
+* iSCSI Read Bytes/sec
+
+* iSCSI Write Bytes/sec
+
+* iSCSI Operations/sec
+
+* FCP Operations/sec
+
+* LUN Read Bytes/sec
+
+* LUN Write Bytes/sec
+
+* LUN Errors/sec
+
+* LUN Read Ops/sec
+
+* LUN Write Ops/sec
+
+* LUN Other Ops/sec
+
 
 ### Languages Used
+
 * PHP
 

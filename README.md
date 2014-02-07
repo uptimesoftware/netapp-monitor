@@ -26,7 +26,7 @@ storage
 
 
 ### Description
-Monitor for NetApp filer (SAN) metrics.
+Monitor for NetApp filer (SAN) metrics over SNMP.
 
 
 ### Supported Monitoring Stations
@@ -45,6 +45,22 @@ None; no agent required
 
 
 ### Input Variables
+
+* SNMP Version		(v1, v2 or v3)
+
+* Community String
+
+* SNMP Port		
+
+* Agent Username (SNMP v3 only)	 
+
+* Authentication Type (SNMP v3 only)	 
+
+* Authentication Passphrase (SNMP v3 only)	 	
+
+* Privacy Type (SNMP v3 only)	
+
+* Privacy Passphrase (SNMP v3 only)
 
 
 ### Output Variables

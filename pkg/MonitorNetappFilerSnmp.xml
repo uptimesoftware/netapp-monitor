@@ -10,7 +10,6 @@
         <supported_platforms>windows, linux</supported_platforms>
         <upgrade_in_place>true</upgrade_in_place>
         <requires_agent_scripts>false</requires_agent_scripts>
-        <requires_additional_setup>true</requires_additional_setup>
     </grid_info>
     <elements>
 		<element name="process_windows" parameter_type="input" data_type="string" gui_basic="1" range_type="0" hidden="true">

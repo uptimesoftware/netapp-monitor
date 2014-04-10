@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uptime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.uptimesoftware.com/erdc/erdc erdc"
-	xmlns="http://www.uptimesoftware.com/erdc/erdc"
-	xmlns:upt="http://www.uptimesoftware.com/erdc/erdc" version="4.0" target_grouping="other">
+<uptime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.0" target_grouping="other">
     <class>NetApp Filer Performance</class>
 	<exec>com.uptimesoftware.uptime.erdc.MonitorCustomScriptRunner</exec>
     <erdc_version>1.0</erdc_version>
@@ -13,6 +10,7 @@
         <supported_platforms>windows, linux</supported_platforms>
         <upgrade_in_place>true</upgrade_in_place>
         <requires_agent_scripts>false</requires_agent_scripts>
+        <requires_additional_setup>true</requires_additional_setup>
     </grid_info>
     <elements>
 		<element name="process_windows" parameter_type="input" data_type="string" gui_basic="1" range_type="0" hidden="true">
@@ -152,7 +150,7 @@
             <gui_type>
                 <integer/>
             </gui_type>
-        </element> 
+        </element>
 
         <element name="dfUsed" parameter_type="output" data_type="ranged" gui_basic="1" range_type="0" units="MB">
             <control_options>size:8</control_options>
@@ -176,7 +174,7 @@
             <gui_type>
                 <integer/>
             </gui_type>
-        </element>        
+        </element>
         
         <element name="dfStatus" parameter_type="output" data_type="ranged" gui_basic="1" range_type="0" units="">
             <control_options>size:8</control_options>

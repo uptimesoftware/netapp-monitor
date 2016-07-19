@@ -10,7 +10,6 @@
 	$SNMP_v3_priv_type = getenv('UPTIME_PRIVACY-TYPE');
 	$SNMP_v3_priv_pass = getenv('UPTIME_PRIVACY-PASS');
 	$MONITOR_TIMEOUT = getenv('UPTIME_TIMEOUT');
-	$SNMP_Connection =  getenv('UPTIME_CONNECTION');
 	
 	$LAST_VALUE_FILE = "Netapp_Last_Value.".$NetApp_Host.".txt";
 	$CURRENT_TIME = time();
@@ -26,10 +25,6 @@
 	if($SNMP_version == "v1") {
 		if ($NetApp_Community == "") {
 			echo "Please enter the SNMP community string.";
-			exit(2);
-		}
-		if ($SNMP_Connection=="") {
-			echo "Device Unavailable... Please Check your Connections.";
 			exit(2);
 		}
 		$df_name = snmpwalk($NetApp_Connection_String,$NetApp_Community,"1.3.6.1.4.1.789.1.5.4.1.2");
@@ -111,10 +106,6 @@
 	} elseif($SNMP_version == "v2") {
 		if ($NetApp_Community == "") {
 			echo "Please enter the SNMP community string.";
-			exit(2);
-		}
-		if ($SNMP_Connection=="") {
-			echo "Device Unavailable... Please Check your Connection.";
 			exit(2);
 		}
 		$df_name = snmp2_walk($NetApp_Connection_String,$NetApp_Community,"1.3.6.1.4.1.789.1.5.4.1.2");
@@ -200,10 +191,6 @@
 			exit(2);
 		}
 	
-		if ($SNMP_Connection=="") {
-			echo "Device Unavailable... Please Check your Connections.";
-			exit(2);
-		}
 		if ($SNMP_v3_priv_type == "") {
 			if ($SNMP_v3_auth_type == "") {
 				$SNMP_sec_level = "noAuthNoPriv";
